@@ -1,10 +1,14 @@
 package ejercicios;
 
+import java.util.Scanner;
+
 // Suma de los primeros N números naturales
-public class ejercicio9 {
+public class ejercicio9conInput {
     public static void main(String[] args) {
         // Declaración de la variable
-        int N = 50; // Variable 'N' con valor 50
+        Scanner lectura = new Scanner (System.in);
+        System.out.println("Ingrese número natural hasta el cual sumar: ");
+        int N = lectura.nextInt();
 
         // Variable para almacenar la suma
         int suma = 0;
